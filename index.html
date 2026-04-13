@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portal de Consulta Financeira</title>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root{
+  --primary:#ff2d8f;      /* rosa principal */
+  --secondary:#ff6bb5;    /* rosa claro */
+  --bg:#fff7fb;           /* fundo rosado */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(180deg,#ffffff 0%, var(--bg) 100%);
+    color: #1f2937;
+}
+
+.primary { color: var(--primary); }
+
+.btn {
+    background: linear-gradient(135deg,var(--primary),var(--secondary));
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: 0.2s ease;
+    box-shadow: 0 8px 20px rgba(255,45,143,0.25);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.05);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    border: 1px solid rgba(255,45,143,0.15);
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.hero{
+  background: radial-gradient(circle at top, rgba(255,45,143,0.15), transparent 60%);
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="bg-white/80 backdrop-blur border-b">
+    <div class="container px-6 py-4 flex justify-between items-center">
+        <h1 class="text-lg font-semibold">Portal de Consulta</h1>
+        <nav class="text-sm text-gray-500">
+            Informações • Transparência
+        </nav>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero py-14">
+  <div class="container px-6 text-center">
+        <h2 class="text-3xl md:text-4xl font-semibold leading-snug">
+            Consulta de condições
+        </h2>
+
+        <p class="text-gray-600 mt-4 max-w-xl mx-auto">
+            Este portal permite verificar possibilidades de negociação e regularização junto a plataformas parceiras, de forma online.
+        </p>
+
+        <a href="https://techlistafeirao.github.io/clientes/inicio/" 
+           class="btn inline-block mt-6 px-10 py-4 text-lg">
+            Iniciar consulta
+        </a>
+    </div>
+</section>
+
+<!-- INFORMAÇÕES -->
+<main class="container px-6 pb-12">
+    <section class="mt-4 grid md:grid-cols-2 gap-6">
+
+        <div class="card p-6">
+            <h3 class="font-semibold mb-2">Como funciona</h3>
+            <p class="text-sm text-gray-600">
+                Após iniciar a consulta, você poderá visualizar opções disponíveis de acordo com seus dados informados.
+            </p>
+        </div>
+
+        <div class="card p-6">
+            <h3 class="font-semibold mb-2">Transparência</h3>
+            <p class="text-sm text-gray-600">
+                Este site atua como intermediador de acesso a serviços de consulta. As condições dependem de análise individual.
+            </p>
+        </div>
+
+        <div class="card p-6">
+            <h3 class="font-semibold mb-2">Segurança</h3>
+            <p class="text-sm text-gray-600">
+                O acesso é realizado por conexão segura e pode envolver redirecionamento para parceiros externos.
+            </p>
+        </div>
+
+        <div class="card p-6">
+            <h3 class="font-semibold mb-2">Importante</h3>
+            <p class="text-sm text-gray-600">
+                Nenhuma garantia de aprovação ou condições específicas é oferecida previamente.
+            </p>
+        </div>
+
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="border-t bg-white mt-10">
+    <div class="container px-6 py-6 text-xs text-gray-500 text-center">
+        © 2026 Portal de Consulta • Termos de uso • Política de privacidade
+    </div>
+</footer>
+
+</body>
+</html>
